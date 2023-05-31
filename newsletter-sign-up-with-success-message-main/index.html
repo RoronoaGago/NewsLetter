@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+  <main>
+    <div class="right">
+      <img src="/assets/images/illustration-sign-up-mobile.svg" alt="sign-up" class="mobile-img" id="right">
+    <img src="/assets/images/illustration-sign-up-desktop.svg" alt="" class="desktop-img" id="right">
+    </div>
+    <div class="main-content first-page">
+      <div class="stay-updated">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <div class="checks">
+          <p>Product discovery and building what matters</p>
+          <p>Measuring to ensure updates are a success</p>
+          <p>And much more!</p>
+        </div>
+      </div>
+      <form id="form">
+        <label for="email" class="labels">
+          <p>Email address</p>
+          <p class="invalid-email" id="invalid-email">Valid Email Required</p>
+        </label>
+        <input type="email" id="email" name="email" placeholder="email@company.com">
+        <button type="submit"class="submit" id="button">Subscribe to monthly newsletter</button>
+      </form>
+    </div>
+    <div class="main-content suces">
+      <div class="stay-updated success">
+      <img src="/assets/images/icon-success.svg" alt="">
+      <h1>Thanks for subscribing!</h1>
+      <p>A confirmation email has been sent to <span id="userEmail"></span>. Please
+          open it and click the button inside to confirm your subscription.
+      </p>
+      <button id="dismiss-message" class="dismiss-message">Dismiss message</button>
+  </div>
+  </div>
+  </main>
+
+
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+
+
+  <!-- Success message end -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
